@@ -26,7 +26,7 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background: #120c02;
+  background: #06140a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,17 +40,17 @@ body::before {
   content: '';
   position: fixed; inset: 0;
   background:
-    radial-gradient(ellipse at 15% 20%, rgba(92,74,30,0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 80%, rgba(122,30,30,0.2) 0%, transparent 50%),
-    repeating-linear-gradient(0deg, transparent, transparent 44px, rgba(160,124,58,0.03) 44px, rgba(160,124,58,0.03) 45px),
-    #120c02;
+    radial-gradient(ellipse at 15% 20%, rgba(46,93,58,0.5) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 80%, rgba(200,160,0,0.15) 0%, transparent 50%),
+    repeating-linear-gradient(0deg, transparent, transparent 44px, rgba(95,158,110,0.03) 44px, rgba(95,158,110,0.03) 45px),
+    #06140a;
   pointer-events: none; z-index: 0;
 }
 
 #hud {
   position: sticky; top: 0; z-index: 100;
   width: 100%; max-width: 540px;
-  background: linear-gradient(135deg, #120c02 0%, #251a06 100%);
+  background: linear-gradient(135deg, #06140a 0%, #10281a 100%);
   border-bottom: 2px solid var(--primary);
   padding: 10px 16px 8px; display: none;
 }
