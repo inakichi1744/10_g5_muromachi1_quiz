@@ -207,6 +207,7 @@ body::before {
 .result-table td.q-cell{cursor:pointer;color:var(--primary-dark);text-decoration:underline dotted;}
 .exp-col-btn{font-size:0.74rem;padding:3px 10px;border:1.5px solid var(--gold-dark);border-radius:999px;background:#fffde7;color:#a07020;cursor:pointer;font-family:inherit;font-weight:700;white-space:nowrap;}
 .itag{word-break:keep-all;overflow-wrap:anywhere;} /* itag-nobreak */
+.itag{white-space:nowrap;overflow:hidden;padding-left:6px;padding-right:6px;} /* itag-oneline */
 </style>
 </head>
 <body>
@@ -716,5 +717,6 @@ function reviewWrong(){
 function openQaPopup(t,img){ var b=document.getElementById('qa-popup-text'); b.textContent=t; if(img){ var im=document.createElement('img'); im.src=img; im.style.cssText='width:100%;border-radius:6px;margin-top:10px;'; b.appendChild(im); } document.getElementById('qa-popup').classList.add('show'); }
 function closeQaPopup(){ document.getElementById('qa-popup').classList.remove('show'); }
 </script>
+<script>/* itag-fit */(function(){function fit(){document.querySelectorAll('.itag').forEach(function(e){e.style.fontSize='';var s=parseFloat(getComputedStyle(e).fontSize);while(e.scrollWidth>e.clientWidth&&s>8){s-=0.5;e.style.fontSize=s+'px';}});}window.addEventListener('load',fit);window.addEventListener('resize',fit);if(document.fonts)document.fonts.ready.then(fit);})();</script>
 </body>
 </html>
