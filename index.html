@@ -281,9 +281,9 @@ body::before {
 
   <div class="q-card" id="q-card">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
-      <span class="section-badge" id="q-section">大問1</span>
+      <span class="section-badge" id="q-section">🏯 室町時代</span>
       <div class="q-meta" style="margin-bottom:0;flex:1;">
-        <span class="q-num" id="q-num">問1 / 20</span>
+        <span class="q-num" id="q-num"></span>
         <span class="q-type-badge" id="q-type-badge">選択</span>
       </div>
     </div>
@@ -520,8 +520,8 @@ function renderQuestion(){
   answered=false;
   const card=document.getElementById('q-card');
   card.style.animation='none'; void card.offsetWidth; card.style.animation='';
-  document.getElementById('q-section').textContent=q.section;
-  document.getElementById('q-num').textContent=`問${currentIndex+1} / ${questions.length}`;
+  document.getElementById('q-section').textContent='🏯 室町時代';
+  document.getElementById('q-num').textContent=`${currentIndex+1}問目 ／ ${questions.length}問`;
   document.getElementById('q-text').textContent=q.text;
   const tb=document.getElementById('q-type-badge');
   if(q.type==='choice'){ tb.textContent='選択'; tb.className='q-type-badge choice'; }
